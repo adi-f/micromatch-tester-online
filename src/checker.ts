@@ -1,4 +1,4 @@
-import micromatch from "micromatch";
+import { isMatch as micromatchIsMatch } from "micromatch";
 export type CheckResult =
   | { state: "empty" }
   | { state: "match" }
@@ -9,7 +9,7 @@ export function checkMatch(input: string, pattern: string): CheckResult {
     return { state: "empty" };
   }
   try {
-    const matched = micromatch.isMatch(input, pattern);
+    const matched = micromatchIsMatch(input, pattern);
     return matched ? { state: "match" } : { state: "no-match" };
   } catch (err) {
     const message = err instanceof Error ? err.message : String(err);

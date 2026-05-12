@@ -1,7 +1,3 @@
 import { defineConfig } from "vite";
 
-export default defineConfig({
-  optimizeDeps: {
-    include: ["micromatch"],
-  },
-});
+export default defineConfig({});
