@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micromatch Tester</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Micromatch Tester</h1>
+      <p class="subtitle">
+        Test glob patterns against inputs using
+        <a href="https://github.com/micromatch/micromatch" target="_blank">micromatch</a>
+      </p>
+      <div class="form">
+        <div class="field">
+          <label for="input">Input</label>
+          <input
+            type="text"
+            id="input"
+            placeholder="z.B. src/components/Button.tsx"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+        <div class="field">
+          <label for="pattern">Pattern</label>
+          <input
+            type="text"
+            id="pattern"
+            placeholder="z.B. **/*.tsx"
+            autocomplete="off"
+            spellcheck="false"
+          />
+        </div>
+      </div>
+      <div class="result" id="result" aria-live="polite">
+        <span class="result-placeholder">Gib Input und Pattern ein …</span>
+      </div>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

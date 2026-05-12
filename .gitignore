@@ -1,0 +1,24 @@
+# Dependencies
+node_modules/
+# Build output
+dist/
+# Logs
+logs/
+*.log
+npm-debug.log*
+# Environment
+.env
+.env.local
+.env.*.local
+# OS
+.DS_Store
+Thumbs.db
+# VS Code
+.vscode/
+# IntelliJ / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+# TypeScript cache
+*.tsbuildinfo

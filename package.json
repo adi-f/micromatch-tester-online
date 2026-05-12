@@ -1,0 +1,21 @@
+{
+  "name": "micromatch-tester-online",
+  "version": "1.0.0",
+  "description": "Micromatch Tester Online",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "test": "vitest run",
+    "format": "prettier --write ."
+  },
+  "devDependencies": {
+    "@types/micromatch": "^4.0.9",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "vite": "^6.3.5",
+    "vitest": "^3.1.3"
+  },
+  "dependencies": {
+    "micromatch": "^4.0.8"
+  }
+}
