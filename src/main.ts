@@ -12,7 +12,7 @@ function renderResult(): void {
   switch (result.state) {
     case "empty": {
       resultEl.classList.add("result--empty");
-      resultEl.innerHTML = '<span class="result-placeholder">Gib Input und Pattern ein …</span>';
+      resultEl.innerHTML = '<span class="result-placeholder">Enter an input and a pattern …</span>';
       break;
     }
     case "match": {
