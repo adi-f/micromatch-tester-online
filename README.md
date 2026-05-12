@@ -11,5 +11,4 @@ A simple browser tool for testing glob patterns against arbitrary inputs – pow
 
 ---
 
-*Generated with the help of GitHub Copilot.
-
+Generated with the help of GitHub Copilot.
